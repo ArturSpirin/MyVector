@@ -173,4 +173,4 @@ with anki_vector.Robot(args.serial,
                        enable_nav_map_feed=True,
                        enable_audio_feed=True,
                        default_logging=False) as robot:
-    MyController(interface="/dev/input/js0", via_bluetoothctl=True, robot=robot).listen()
+    MyController(interface="/dev/input/js0", via_bluetoothctl=False, robot=robot).listen()
